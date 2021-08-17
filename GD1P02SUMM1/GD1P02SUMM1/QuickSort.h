@@ -78,11 +78,15 @@ public:
 
 	void QuickSort(T _arrayFirst, T _arrayLast)
 	{
+		if (_arrayLast < 1 || _arrayLast > 4)
+		{
+			return;
+		}
 		assert(m_array != NULL);
 		int pivotPoint, upCounter = _arrayFirst, downCounter = _arrayLast, head, tail;
 		bool upValueFound = false;
 		bool downValueFound = false;
-		pivotPoint = _arrayLast - _arrayFirst / 2;
+		pivotPoint = (_arrayLast - _arrayFirst) / 2;
 
 		// swap pivot to start
 		T temp = m_array[pivotPoint];
@@ -93,12 +97,16 @@ public:
 		tail = _arrayLast;
 
 		// convert while to for loop
+		if (upCounter > downCounter)
+		{
+			return;
+		}
 		while (upCounter < downCounter)
 		{
 			while (!upValueFound) //increment through array to find value value greater than first value;
 			{
 				upCounter++;
-				if (m_array[upCounter] > m_array[0])
+				if (m_array[upCounter] > m_array[_arrayFirst])
 				{
 					upValueFound = true;
 				}
@@ -106,19 +114,36 @@ public:
 			while (!downValueFound)
 			{
 				downCounter--;
-				if (m_array[downCounter] < m_array[0])
+				if (m_array[downCounter] < m_array[_arrayFirst])
 				{
 					downValueFound = true;
 				}
 			}
-			// swap 
+			// swap 		
+			if (_arrayLast < 1 || _arrayLast > 4)
+			{
+				return;
+			}
 			temp = m_array[upCounter];
 			m_array[upCounter] = m_array[downCounter];
 			m_array[downCounter] = temp;
 		}
+		if (_arrayLast < 1 || _arrayLast > 4)
+		{
+			return;
+		}
 		temp = m_array[downCounter];
-		m_array[downCounter] = m_array[0];
+		m_array[downCounter] = m_array[_arrayFirst];
 		m_array[_arrayFirst] = temp;
+
+		if (_arrayLast < 1 || _arrayLast > 4)
+		{
+			return;
+		}
+		if (pivotPoint < 1 || pivotPoint >= m_numElements)
+		{
+			return;
+		}
 		this->QuickSort(_arrayFirst, pivotPoint - 1);
 		this->QuickSort(pivotPoint + 1, _arrayLast);
 	}
