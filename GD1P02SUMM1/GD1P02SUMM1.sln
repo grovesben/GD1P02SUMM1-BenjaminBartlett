@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GD1P02SUMM1", "GD1P02SUMM1\GD1P02SUMM1.vcxproj", "{5CF2FE4B-A015-4A8E-91B3-E767840140EB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QuickSort", "GD1P02SUMM1\GD1P02SUMM1.vcxproj", "{5CF2FE4B-A015-4A8E-91B3-E767840140EB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Deque", "Deque\Deque.vcxproj", "{27948334-F43E-4D69-A434-C090F7384916}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,14 @@ Global
 		{5CF2FE4B-A015-4A8E-91B3-E767840140EB}.Release|x64.Build.0 = Release|x64
 		{5CF2FE4B-A015-4A8E-91B3-E767840140EB}.Release|x86.ActiveCfg = Release|Win32
 		{5CF2FE4B-A015-4A8E-91B3-E767840140EB}.Release|x86.Build.0 = Release|Win32
+		{27948334-F43E-4D69-A434-C090F7384916}.Debug|x64.ActiveCfg = Debug|x64
+		{27948334-F43E-4D69-A434-C090F7384916}.Debug|x64.Build.0 = Debug|x64
+		{27948334-F43E-4D69-A434-C090F7384916}.Debug|x86.ActiveCfg = Debug|Win32
+		{27948334-F43E-4D69-A434-C090F7384916}.Debug|x86.Build.0 = Debug|Win32
+		{27948334-F43E-4D69-A434-C090F7384916}.Release|x64.ActiveCfg = Release|x64
+		{27948334-F43E-4D69-A434-C090F7384916}.Release|x64.Build.0 = Release|x64
+		{27948334-F43E-4D69-A434-C090F7384916}.Release|x86.ActiveCfg = Release|Win32
+		{27948334-F43E-4D69-A434-C090F7384916}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
